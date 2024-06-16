@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION STYLE */
+nav {
+    background-color: #f5f5f5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo a {
+    color:  rgb(0, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:900;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links li .navb {
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  /*nav buttons hover style*/
+  .nav-links li .navb::after {
+    content: ''; /* Create an empty content for the pseudo-element */
+    display: block;
+    height: 3px; /* Set the height of the bottom line */
+    width: 0; /* Set initial width to 0 so it's not visible by default */
+    background-color: #1c89ff; /* Set the color of the bottom line */
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 100%;
+    transition: width 0.7s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Hover effect for the bottom line animation */
+  .nav-links li .navb:hover::after {
+    width: 100%; 
+    left: 0; 
+  }
+  
+  .dropdown-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-links {
+    display: none;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dropdown-links li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    width: 130px;
+    padding: 5px;
+  }
+  
+  .dropdown-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+    #special{
+      background: #1c89ff;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 2s;
+    }
+  
+    #special:hover{
+      background:#124c86;
+    }
+  
+    #special a{
+      color:white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      transition: all 2s;
+    }
+  
+    #special a:hover{
+      color: rgb(185, 185, 185);
+    }
+
+   /* WELCOME SECTION */
+   .welcome{
+    position: relative;
+    width: 100vw;
+    margin:  auto;
+    background-color: #000 ;
+   }
+
+   .welcome img{
+    display: block;
+    width: 70%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+   }    
+
+  /*-- OFFER SECTION STYLE --*/
+  .offer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .offer-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex: 1 1 30%; /* Use flex-basis for initial size, and flex-grow & flex-shrink for flexibility */
+    padding: 2%; /* Use percentage for padding */
+    background-color: #ffffff;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-left: #000 1px solid;
+    border-right: #000 1px solid;
+
+  }
+  
+  .offer-item img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5%; /* Use percentage for margin */
+  }
+  
+  .para-offer {
+    padding: 2%; /* Use percentage for padding */
+    font-size: 1em; /* Use em units for font size */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* CHOOSE ANIME STYLE */
+  .choose-header{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    padding-top: 2%;
+    }
+
+    .blue{
+      color: #027bfd;
+     }
+    
+    .choose-anime {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 3%;
+     }
+      
+    .box {
+      width: 250px;
+      height: 250px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.4s ease;
+     }
+    
+     .box:hover{
+      transform: scale(1.10);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+      
+    .box h3 {
+       margin: 0;
+    }
+
+      /*--- CHOOSE ANIME STYLE ---*/
+  .choose-header{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    padding-top: 1%;
+    }
+
+    .blue{
+      color: #027bfd;
+     }
+    
+    .choose-anime {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 3%;
+     }
+      
+    .box {
+      width: 250px;
+      height: 250px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.4s ease;
+     }
+    
+    .box:hover{
+      transform: scale(1.10);
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    }
+      
+    .box h3 {
+       margin: 0;
+    }
+   
+    /*----- IMAGES HERE------*/
+    .one{
+      background-image: url('../UniverseImages/one.png');
+      background-size: cover;
+     }
+  
+     .two{
+      background-image: url('../UniverseImages/two.png');
+      background-size: cover;
+     }
+  
+     .three{
+      background-image: url('../UniverseImages/three.png');
+      background-size: cover;
+     }
+  
+     .four{
+      background-image: url('../UniverseImages/four.png');
+      background-size: cover;
+     }
+  
+     .five{
+      background-image: url('../UniverseImages/five.png');
+      background-size: cover;
+     }
+  
+     .six{
+      background-image: url('../UniverseImages/six.png');
+      background-size: cover;
+     }
+  
+     .seven{
+      background-image: url('../UniverseImages/seven.png');
+      background-size: cover;
+     }
+  
+     .eight{
+      background-image: url('../UniverseImages/eight.png');
+      background-size: cover;
+     }
+  
+     .nine{
+      background-image: url('../UniverseImages/nine.png');
+      background-size: cover;
+     }
+  
+     .ten{
+      background-image: url('../UniverseImages/ten.png');
+      background-size: cover;
+     }
+  
+     .eleven{
+      background-image: url('../UniverseImages/eleven.png');
+      background-size: cover;
+     }
+  
+     .twelve{
+      background-image: url('../UniverseImages/twelve.png');
+      background-size: cover;
+     }
+  
+     .thirteen{
+      background-image: url('../UniverseImages/thirteen.png');
+      background-size: cover;
+     }
+  
+     .fourteen{
+      background-image: url('../UniverseImages/fourteen.png');
+      background-size: cover;
+     }
+  
+     .fifteen{
+      background-image: url('../UniverseImages/fifteen.png');
+      background-size: cover;
+     }
+  
+     .sixteen{
+      background-image: url('../UniverseImages/sixteen.png');
+      background-size: cover;
+     }
+  
+     .seventeen{
+      background-image: url('../UniverseImages/seventeen.png');
+      background-size: cover;
+     }
+  
+     .eighteen{
+      background-image: url('../UniverseImages/eighteen.png');
+      background-size: cover;
+     }
+  
+  
+
+
+
+
+
+/*---- MOBILE RESPONSIVE ----*/ 
+
+  /*navigation mobile style*/
+
+  @media only screen and (max-width: 868px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .dropdown-icon {
+      display: block;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+  
+    .dropdown-links {
+      display: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      font-variant: small-caps;
+    }
+  
+    .dropdown-links.show {
+      display: grid;
+      justify-content: center;
+    }
+  
+  }
+      /*Media query for welcome section*/
+      @media only screen and (max-width: 868px) {
+        .welcome img{
+          width: 100%;
+          object-fit: cover;
+          margin: auto; /* Center the carousel horizontally */
+        }
+      } 
+
+/*Media query for Offer Section*/
+@media screen and (max-width: 768px) {
+  .offer-item {
+    flex: 1 1 100%; /* Make flex items full width on smaller screens */
+  }
+  .offer{
+    padding: 23px;
+  }
+
+}
+
+/*Media query for Choose Section*/
+@media screen and (max-width: 768px){
+  .choose-header{
+   font-size: 30px;
+   padding-top: 30px;
+   padding-bottom: 20px;
+  }
+
+  .box{
+    width: 180px;
+    height: 185px;
+   }
+  }

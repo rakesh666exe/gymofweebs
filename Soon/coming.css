@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    
+}
+
+.content {
+    text-align: center;
+    margin-top: 240px; 
+    font-family: Arial, sans-serif; 
+    padding: 15px;
+}
+
+
+.content h1 {
+    font-size: 76px; 
+    color: #333; 
+}
+
+
+.content p {
+    font-size: 28px; 
+    color: #666; 
+}
+
+.bt {
+    padding: 13px 23px; 
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; 
+    transition: all 0.3s;    
+}
+
+.bt a{
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+}
+
+.bt:hover{
+  color: white;
+  font-weight: 700;
+}
+
+
+/* Style for the background image div 
+.back-image {
+    background-image: url(''); /* Adjust path to your image 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; /* Adjust height as needed 
+}
+*/
+
+/*---- MOBILE RESPONSIVE ----*/
+@media only screen and (max-width: 732px){
+    .content{
+        margin-top: 230px;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+}

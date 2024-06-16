@@ -1,0 +1,582 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP BAR STYLE */
+.top-bar{
+  background-color: rgb(0, 0, 0);/*#1c89ff;*/ 
+  padding: 2px;
+  width: 100%;
+  margin: 0 auto; /* This will center the element */
+  text-align: center;
+  } 
+
+  .top-bar-para{
+    font-weight: 600;
+    padding: 8px;
+    color: white;
+  }
+  
+  .top-bar-para:hover{
+    text-decoration: underline;
+  }
+ 
+ /* NAVIGATION STYLE */
+ nav {
+   background-color: #f5f5f5;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+ }
+ 
+ .logo a {
+   color:  rgb(0, 0, 0);
+   font-size: 24px;
+   text-decoration: none;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:900;
+ }
+ 
+ .nav-links li {
+   display: inline-block;
+   margin-left: 20px;
+ }
+ 
+ .nav-links li .navb {
+   color:  rgb(0, 0, 0);
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-variant: small-caps;
+   font-size: 18px;
+   font-weight: 700;
+   position: relative;
+ }
+ 
+ /*nav buttons hover style*/
+ .nav-links li .navb::after {
+   content: ''; /* Create an empty content for the pseudo-element */
+   display: block;
+   height: 3px; /* Set the height of the bottom line */
+   width: 0; /* Set initial width to 0 so it's not visible by default */
+   background-color: #1c89ff; /* Set the color of the bottom line */
+   position: absolute;
+   bottom: 0;
+   left: 0%;
+   top: 100%;
+   transition: width 0.7s ease; /* Add a smooth transition effect */
+ }
+ 
+ /* Hover effect for the bottom line animation */
+ .nav-links li .navb:hover::after {
+   width: 100%; 
+   left: 0; 
+ }
+ 
+ .dropdown-icon {
+   display: none;
+   cursor: pointer;
+ }
+ 
+ .dropdown-links {
+   display: none;
+   background-color: black;
+   padding: 20px;
+   text-align: center;
+ }
+ 
+ .dropdown-links li {
+   margin-bottom: 10px;
+   list-style-type: none;
+   width: 130px;
+   padding: 5px;
+ }
+ 
+ .dropdown-links li a {
+   color: #fff;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+   #special{
+     background: #1c89ff;
+     padding: 10px;
+     border-radius: 5px;
+     transition: all 2s;
+   }
+ 
+   #special:hover{
+     background:#124c86;
+   }
+ 
+   #special a{
+     color:white;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     transition: all 2s;
+   }
+ 
+   #special a:hover{
+     color: rgb(185, 185, 185);
+   }
+
+/*---  SHOP NAVIGATION ---*/
+  .shop-nav {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.shop-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.shop-list li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 6px;
+}
+
+.active{
+  color: #1c89ff;
+}
+
+.shop-list a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.shop-list li:last-child {
+    margin-right: 0;
+}
+
+
+   /* WELCOME SECTION */
+   .welcome{
+    position: relative;
+    width: 100vw;
+    margin:  auto;
+    background-color: #000;
+   }
+
+   .welcome img{
+    display: block;
+    width: 70%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   /*---- ARSENAL SECTION ----*/
+
+.arsenal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Styling the image container */
+.image-container {
+  flex: 0 0 40%; /* Adjust the width of the image container */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Styling the content on the right */
+.content {
+  flex: 0 0 55%; /* Adjust the width of the content */
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 30px;
+}
+
+.blue{
+  color: #027bfd;
+}
+
+.content p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.content button{
+  margin-top: 35px;
+  display: inline-block;
+  padding: 13px 49px;
+  background-color: #027bfd;
+  border: 2px #027bfd solid;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  font-size: 19px;
+  text-align: center;
+}
+
+
+/*----WEIGHTS SECTION ----*/
+.weight-header{
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+  background-color:#f8f8f8 ;
+}
+
+.blue{
+  color: #027bfd;
+}
+
+  .shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+  }
+
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d43900;
+    margin-bottom: 10px;
+  }
+
+  .buy-now-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buy-now-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #027bfd;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.9s ease;
+    text-align: center; /* Added to center the button */
+  }
+
+  .buy-now-btn:hover{
+    font-weight: 700;
+    background-color: #1f71c3;
+  }
+
+
+/*----PARALLETTES SECTION ----*/
+.parallette-header{
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.Parallettes{
+ background-color: white ;
+}
+
+
+/*----BANDS SECTION ----*/
+.band-header{
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+
+/*----BARS SECTION ----*/
+.bars-header{
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.Bars{
+  background-color: white ;
+ }
+ 
+
+/*----ACCESORIES SECTION ----*/
+
+
+
+/*----CLOTHING SECTION ----*/
+
+
+
+
+/*----MANGA SECTION ----*/
+
+
+
+
+   
+    /*----FOOTER STYLE---*/
+   footer{
+    background: #1a1a1a;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+  }
+
+  .footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+  }
+
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+
+  .footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 17px;
+  }
+
+ 
+  .pf a{
+   text-decoration: none;
+   color: #1f71c3;
+   font-weight: 600;
+   transition: all 1s ease;
+  }
+
+  .pf a:hover{
+   color:#024385;
+  }
+  
+
+  .socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+   margin: 0 10px;
+  }
+
+  .socials a{
+   text-decoration: none;
+   color: #fff;
+  }
+
+  .socials a i{
+   font-size: 1.1rem;
+   transition: color .4s ease;
+  }
+
+  .socials .fa-instagram:hover{
+    color:rgb(202, 41, 202);
+  }
+  
+  .socials .fa-facebook:hover{
+   color: #1f71c3;
+ }
+
+ .socials .fa-youtube-play:hover{
+   color: rgb(235, 100, 100);
+ }
+
+ .socials .fa-spotify:hover{
+   color: rgb(39, 167, 39);
+ }
+
+  .footer-bottom{
+   background: #000;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+  }
+  
+  .white{
+   color: white  ; 
+   font-weight: 600;
+  }
+
+
+
+
+
+     
+
+   /*---- MOBILE RESPONSIVE ----*/
+
+  /*navigation mobile style*/
+
+  @media only screen and (max-width: 868px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .dropdown-icon {
+      display: block;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+  
+    .dropdown-links {
+      display: center;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      font-variant: small-caps;
+    }
+  
+    .dropdown-links.show {
+      display: grid;
+      justify-content: center;
+    }
+  
+  }
+
+  /*Media query for welcome section*/
+
+  @media only screen and (max-width: 868px) {
+    .welcome img{
+      width: 100%;
+      object-fit: cover;
+      margin: auto; /* Center the carousel horizontally */
+    }
+  } 
+ 
+  /*Media query for the Arsenal section*/ 
+  @media only screen and (max-width: 1190px){
+
+    .arsenal{
+      width: 100%;
+    }
+
+    .content h2{
+      font-size: 40px;
+    }
+
+    .content p{
+      font-size: 19px;
+    }
+
+    .content button{
+      padding: 10px 45px;
+      font-size: 15px;
+    }
+
+  }
+
+  @media only screen and (max-width: 760px) {
+    .arsenal {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  .image-container{
+    width: 70%;
+  }
+  .content {
+    width: 80%;
+    text-align: center;
+  }
+  }
+
+/*Media query for the Shop section Products*/ 
+@media only screen and (max-width: 860px){
+  .product{
+    width: 210px;
+  }
+}
+
+/*Media query for the Shop section Headers*/ 
+  @media only screen and (max-width: 760px){
+    .weight-header{
+      font-size: 40px;
+    }
+
+    .parallette-header{
+      font-size: 40px;
+    }
+
+    .band-header{
+      font-size: 40px;
+    }
+
+    .bars-header{
+      font-size: 40px;
+    }
+  }
+

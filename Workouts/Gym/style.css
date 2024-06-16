@@ -1,0 +1,338 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION STYLE */
+nav {
+  background-color: #f5f5f5;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.logo a {
+  color:  rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:900;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li .navb {
+  color:  rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+/*nav buttons hover style*/
+.nav-links li .navb::after {
+  content: ''; /* Create an empty content for the pseudo-element */
+  display: block;
+  height: 3px; /* Set the height of the bottom line */
+  width: 0; /* Set initial width to 0 so it's not visible by default */
+  background-color: #1c89ff; /* Set the color of the bottom line */
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  top: 100%;
+  transition: width 0.7s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the bottom line animation */
+.nav-links li .navb:hover::after {
+  width: 100%; 
+  left: 0; 
+}
+
+.dropdown-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-links {
+  display: none;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropdown-links li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  width: 130px;
+  padding: 5px;
+}
+
+.dropdown-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  #special{
+    background: #1c89ff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 2s;
+  }
+
+  #special:hover{
+    background:#124c86;
+  }
+
+  #special a{
+    color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: all 2s;
+  }
+
+  #special a:hover{
+    color: rgb(185, 185, 185);
+  }
+
+
+/* Baki Workout Plan */
+.workout-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px; /* Limit the maximum width of the product page */
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 25px;  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+}
+
+.workout-page img {
+  width: 100%; /* Ensure the image takes 100% width of its container */
+  max-width: 400px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px;
+}
+
+.character-info{
+  flex: 1;
+  padding: 20px;
+  max-width: 400px; /* Limit the maximum width of the product information */
+}
+
+.workout-header{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-bottom: 10px;
+ }
+
+.blue{
+color: #027bfd;
+}
+
+.workout-para{
+ text-align: center;
+ margin-bottom: 20px;
+ font-size: 1.1rem;
+}
+
+.workout-para2{
+  text-align: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.workout-para2 br{
+display: block; /* Make <br> a block element */
+content: ""; 
+margin-bottom: 1.2em; /* Adjust the spacing between lines */
+}
+
+.workout-para3{
+text-align: center;
+margin-bottom: 20px;
+margin-top: 20px;
+font-size: 1.2rem;
+}
+
+
+button {
+background: #1c89ff;
+border: none;
+display: none; /*block*/
+padding: 10px 20px;
+text-align: center;
+font-size: 16px;
+margin: 0 auto; /*center button*/
+cursor: pointer;
+border-radius: 5px;
+transition: all 2s;
+}
+
+button a{
+text-decoration: none;
+color: white;
+font-weight: 600;
+}
+
+button:hover {
+background:#124c86;
+}
+
+
+/*TABLE STYLE WORKOUT*/
+
+.table-header{
+text-align: center;
+font-size: 3rem;
+font-weight: 600;
+font-variant: small-caps;
+padding-top: 90px;
+}
+
+.table-around{
+padding: 50px;
+}
+
+table {
+margin: 0 auto;
+width: 80%;
+border-collapse: collapse;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+th{
+font-variant: small-caps;
+}
+
+th, td {
+border: 1px solid black;
+padding: 12px;
+text-align: center;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.mention{
+text-align: center;
+font-weight: 600;
+}
+
+
+
+/*---- MOBILE RESPONSIVE ----*/ 
+
+/*navigation mobile style*/
+
+@media only screen and (max-width: 868px) {
+  .nav-links {
+    display: none;
+  }
+
+  .dropdown-icon {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+  .dropdown-links {
+    display: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    font-variant: small-caps;
+  }
+
+  .dropdown-links.show {
+    display: grid;
+    justify-content: center;
+  }
+
+}
+
+/*Media quary for workout page*/
+
+@media (max-width: 840px) {
+  .workout-page {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text within .product-info */
+      width: 75%;
+  }
+
+  .character-info{
+      margin-top: 20px; /* Add some space between image and information */
+  }
+}
+
+@media (max-width: 645px){
+.workout-page{
+  width: 90%;
+}
+}
+
+/*Media quary for Detailed Title*/
+@media (max-width: 840px){
+.table-header{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+}
+
+/*Media quary for table section*/
+@media (max-width: 768px) {
+ 
+.table-around{
+ padding: 0px;
+}
+
+th, td {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 600px) {
+ 
+.table-around{
+  padding: 0px;
+}
+
+th, td {
+    font-size: 10px;
+}
+}
+
+/*Media Quary for mentiion*/
+@media (max-width:600px){
+
+.mention{
+  font-size: 13px;
+}
+}
+

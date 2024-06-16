@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.blue{
+  color: #027bfd;
+}
+
+/* TOP BAR STYLE */
+.top-bar{
+    background-color: rgb(0, 0, 0);/*#1c89ff;*/ 
+    padding: 2px;
+    width: 100%;
+    margin: 0 auto; /* This will center the element */
+    text-align: center;
+  } 
+  
+  .top-bar-para{
+    font-weight: 600;
+    padding: 8px;
+    color: white;
+  }
+  
+  .top-bar-para:hover{
+    text-decoration: underline;
+  }
+  /* NAVIGATION STYLE */
+  nav {
+    background-color: #f5f5f5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo a {
+    color:  rgb(0, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:900;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links li .navb {
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  /*nav buttons hover style*/
+  .nav-links li .navb::after {
+    content: ''; /* Create an empty content for the pseudo-element */
+    display: block;
+    height: 3px; /* Set the height of the bottom line */
+    width: 0; /* Set initial width to 0 so it's not visible by default */
+    background-color: #1c89ff; /* Set the color of the bottom line */
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 100%;
+    transition: width 0.7s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Hover effect for the bottom line animation */
+  .nav-links li .navb:hover::after {
+    width: 100%; 
+    left: 0; 
+  }
+  
+  .dropdown-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-links {
+    display: none;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dropdown-links li {
+    margin-bottom: 13px;
+    list-style-type: none;
+    width: 130px;
+    padding: 5px;
+  }
+  
+  .dropdown-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+    #special{
+      background: #1c89ff;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 2s;
+    }
+  
+    #special:hover{
+      background:#124c86;
+    }
+  
+    #special a{
+      color:white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      transition: all 2s;
+    }
+  
+    #special a:hover{
+      color: rgb(185, 185, 185);
+    }
+
+    /*-- WORKOUTS STYLE --*/
+    .header{
+     text-align: center;
+     font-size: 3rem;
+     font-weight: 600;
+     font-variant: small-caps;
+     padding-top: 3%;
+     padding-bottom: 3%;
+    }
+
+    .workouts{
+      padding-top: 30px;
+      padding-bottom: 40px;
+      text-align: center;
+     }
+  
+     .blue{
+      color: #027bfd;
+     }
+      
+     .character {
+      display: inline-block;
+      margin-left: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+     
+    .character:hover{
+      transform: scale(1.04);
+    }
+    
+    .character img {
+      width: 100%; /* Make images fill the container width */
+      max-width: 300px; /* Set maximum width for larger screens */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px;
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .Cname {
+      font-weight: bold;
+      border: 2px black solid;
+      background-color: #000;
+      color: white;
+      padding: 5px; 
+    } 
+
+     /* BUTTONS SECTION */
+ .button-container {
+  text-align: center;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.back-button,
+.next-button {
+  padding: 20px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px #027bfd solid;
+  color: #027bfd;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+ 
+
+.back-button:hover,
+.next-button:hover {
+  color: white;
+  background-color: #027bfd;
+  font-weight: 700;
+}
+
+    
+      /*----FOOTER STYLE---*/
+   footer{
+    background: #1a1a1a;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+  }
+
+  .footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+  }
+
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+
+  .footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 17px;
+  }
+
+ 
+  .pf a{
+   text-decoration: none;
+   color: #1f71c3;
+   font-weight: 600;
+   transition: all 1s ease;
+  }
+
+  .pf a:hover{
+   color:#024385;
+  }
+  
+
+  .socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+   margin: 0 10px;
+  }
+
+  .socials a{
+   text-decoration: none;
+   color: #fff;
+  }
+
+  .socials a i{
+   font-size: 1.1rem;
+   transition: color .4s ease;
+  }
+
+  .socials .fa-instagram:hover{
+    color:rgb(202, 41, 202);
+  }
+  
+  .socials .fa-amazon:hover{
+   color: rgb(250, 250, 38);
+ }
+
+ .socials .fa-youtube-play:hover{
+   color: rgb(235, 100, 100);
+ }
+
+ .socials .fa-spotify:hover{
+   color: rgb(39, 167, 39);
+ }
+
+  .footer-bottom{
+   background: #000;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+  }
+
+
+  .white{
+   color: white  ; 
+   font-weight: 600;
+  }
+ 
+
+    
+  /*---- MOBILE RESPONSIVE ----*/
+
+  /*Media query for navigation section*/
+  @media only screen and (max-width: 868px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .dropdown-icon {
+      display: block;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+  
+    .dropdown-links {
+      display: center;
+      position: absolute;
+      top: 110px;
+      left: 0px;
+      width: 100%;
+      z-index: 2;
+      padding-bottom: 10px;
+      font-variant: small-caps;
+    }
+  
+    .dropdown-links.show {
+      display: grid;
+      justify-content: center;
+    }
+  
+  }
+
+  /*Media quary for Headers */
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 30px;
+    padding-top: 7%;
+  }
+}
+
+/*Media query for Characters section one*/
+@media only screen and (max-width: 1274px) {
+  .character img{
+  max-width: 236px;
+  }
+}
+
+/*Media query for Characters section two*/
+@media only screen and (max-width: 1017px) {
+  .character img{
+  max-width: 226px;
+  }
+}
+
+/*Media query for Characters section three*/
+@media only screen and (max-width: 977px) {
+  .character img{
+  max-width: 320px;
+  }
+}
+
+/*Media query for Characters section four*/
+@media only screen and (max-width: 675px) {
+  .character img{
+  max-width: 226px;
+  }
+}
+    
